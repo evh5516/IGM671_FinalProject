@@ -1,0 +1,938 @@
+fileFormatVersion: 2
+guid: ce218ca4d53532a46b773f00368a9b42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7387624954552001022
+    second: VampireSpriteSheet_0
+  - first:
+      213: 3337582131019859916
+    second: VampireSpriteSheet_1
+  - first:
+      213: 1068088069862667839
+    second: VampireSpriteSheet_2
+  - first:
+      213: -3197505709843134346
+    second: VampireSpriteSheet_3
+  - first:
+      213: 721624870500059643
+    second: VampireSpriteSheet_3
+  - first:
+      213: -8224610591710566054
+    second: VampireSpriteSheet_5
+  - first:
+      213: 1918765192670290320
+    second: VampireSpriteSheet_4
+  - first:
+      213: 8390918661812493558
+    second: VampireSpriteSheet_7
+  - first:
+      213: -991400411390805282
+    second: VampireSpriteSheet_5
+  - first:
+      213: -2927288139139550806
+    second: VampireSpriteSheet_9
+  - first:
+      213: -433818857144567493
+    second: VampireSpriteSheet_6
+  - first:
+      213: -6019898914971496533
+    second: VampireSpriteSheet_11
+  - first:
+      213: 7391793387063496181
+    second: VampireSpriteSheet_7
+  - first:
+      213: 5111254264698151267
+    second: VampireSpriteSheet_8
+  - first:
+      213: -4644151366328679305
+    second: VampireSpriteSheet_9
+  - first:
+      213: 1513494108430508418
+    second: VampireSpriteSheet_10
+  - first:
+      213: -6049377185951590663
+    second: VampireSpriteSheet_16
+  - first:
+      213: 8231580831716364230
+    second: VampireSpriteSheet_11
+  - first:
+      213: -6737647291217532278
+    second: VampireSpriteSheet_18
+  - first:
+      213: -7197003394821463769
+    second: VampireSpriteSheet_12
+  - first:
+      213: 6518019819849136836
+    second: VampireSpriteSheet_20
+  - first:
+      213: 5019821902096858944
+    second: VampireSpriteSheet_13
+  - first:
+      213: 3203006589554985708
+    second: VampireSpriteSheet_22
+  - first:
+      213: 2817247059309090345
+    second: VampireSpriteSheet_14
+  - first:
+      213: 6901937545412988720
+    second: VampireSpriteSheet_15
+  - first:
+      213: 4579267508479158013
+    second: VampireSpriteSheet_16
+  - first:
+      213: -4029697581939795214
+    second: VampireSpriteSheet_17
+  - first:
+      213: 2601693028427949894
+    second: VampireSpriteSheet_27
+  - first:
+      213: 5682458454061222413
+    second: VampireSpriteSheet_19
+  - first:
+      213: 9147001224831570312
+    second: VampireSpriteSheet_29
+  - first:
+      213: 4620748502431396291
+    second: VampireSpriteSheet_20
+  - first:
+      213: 6787171211879191815
+    second: VampireSpriteSheet_31
+  - first:
+      213: -1561803607837009073
+    second: VampireSpriteSheet_32
+  - first:
+      213: 2834625686000015187
+    second: VampireSpriteSheet_21
+  - first:
+      213: -3743368458766502161
+    second: VampireSpriteSheet_34
+  - first:
+      213: 8237952655413743433
+    second: VampireSpriteSheet_22
+  - first:
+      213: 808952977833191091
+    second: VampireSpriteSheet_23
+  - first:
+      213: -7941369297023661156
+    second: VampireSpriteSheet_24
+  - first:
+      213: -8131800209026449875
+    second: VampireSpriteSheet_25
+  - first:
+      213: -9099220219388083958
+    second: VampireSpriteSheet_26
+  - first:
+      213: 3960534020199289423
+    second: VampireSpriteSheet_43
+  - first:
+      213: -9069781574822100247
+    second: VampireSpriteSheet_44
+  - first:
+      213: 5576795852851115668
+    second: VampireSpriteSheet_45
+  - first:
+      213: -4481290233259284736
+    second: VampireSpriteSheet_46
+  - first:
+      213: 9070311213417442081
+    second: VampireSpriteSheet_47
+  - first:
+      213: -5239505648881229472
+    second: VampireSpriteSheet_48
+  - first:
+      213: 6087855989324197196
+    second: VampireSpriteSheet_49
+  - first:
+      213: 2599103719858410881
+    second: VampireSpriteSheet_50
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VampireSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 321
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edc784ba69b3a04bb78d6a4379212ac
+      internalID: 7387624954552001022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 321
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb9e4581b8111f44ac036bf42e92a11
+      internalID: 3337582131019859916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 321
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ae4fe3233eef848a07fa73bfbc1b5e
+      internalID: 1068088069862667839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 321
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9577f8898cb4d42930f99aa097d5ee
+      internalID: 721624870500059643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 321
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6ea09d1ee10b240a8c011191a01c8f
+      internalID: 1918765192670290320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 321
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63903f1e88f7c994cb5d040f7db50e5a
+      internalID: -991400411390805282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 321
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a52bf1ec90ae74fb0c156c1908a563
+      internalID: -433818857144567493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 273
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6dc948744bb8d43af503f00180e868
+      internalID: 7391793387063496181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 273
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb81a9f9175eb447a7cbb56baec0835
+      internalID: 5111254264698151267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 273
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb0c96aaaa7c9f4db3abdb24f2af840
+      internalID: -4644151366328679305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 273
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4928b115737826d469ca2975fc46ed5a
+      internalID: 1513494108430508418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 273
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619f83030ce4eac40923fbc6d2754b4d
+      internalID: 8231580831716364230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 273
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e529240abd1484cbe843fb2fd9e5a9
+      internalID: -7197003394821463769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 273
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffc129281fe0074e9760ed89bee759c
+      internalID: 5019821902096858944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 225
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec37229193f782a4195f53665c2752fb
+      internalID: 2817247059309090345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 225
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e9753c87b630547912a937ab989432
+      internalID: 6901937545412988720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 225
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce1d69a8e221bf459eb6c58099e05c5
+      internalID: 4579267508479158013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 225
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064f2e8a44b4c5344bf9f8b16f088b89
+      internalID: -4029697581939795214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 225
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d30564551bfba54fb4d86a4aea3144d
+      internalID: 5682458454061222413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 225
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa642e031077e5448aede660c7b6c71
+      internalID: 4620748502431396291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 180
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5497c70c19c8e734eae71fb91150e111
+      internalID: 2834625686000015187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 180
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d0b5c590362204d98d161e5febed9d
+      internalID: 8237952655413743433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 180
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d633315de9cb90439e5856715c0e72b
+      internalID: 808952977833191091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 181
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360967e9846625148922743547ef9e56
+      internalID: -7941369297023661156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 180
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2799525bbce73dd4da22deedb8e652bf
+      internalID: -8131800209026449875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 180
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2e32b89a41b414db813a840c283a78
+      internalID: -9099220219388083958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 150
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9f5155e0c9b0e4f8975a59406e8bfc
+      internalID: -9069781574822100247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 149
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916711afbe64db34983984763b1911c6
+      internalID: 5576795852851115668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 151
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0988cb1425a9e4a89290739587bc76
+      internalID: -4481290233259284736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 149
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66253b644f756d8459d8b60074b45aad
+      internalID: 9070311213417442081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 149
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266a02b999213f44d80bc56fe770086a
+      internalID: -5239505648881229472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 150
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047ae5ee379b29841972dc808277e992
+      internalID: 6087855989324197196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VampireSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 150
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5206a46bd5885b64085988743152d7c9
+      internalID: 2599103719858410881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8cfe43878a1ed4143b30ffe6ca70005a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,6 @@
+
+
+Thrall - 80hp
+Dark Hound - 40hp
+Mage Vampire - 160hp
+Melee Vampire - 250hp
