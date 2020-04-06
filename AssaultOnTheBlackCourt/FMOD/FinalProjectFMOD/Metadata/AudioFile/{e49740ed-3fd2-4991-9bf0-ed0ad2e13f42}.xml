@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{e49740ed-3fd2-4991-9bf0-ed0ad2e13f42}">
+		<property name="assetPath">
+			<value>FireballRelease.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.71414965986394563</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{43f4669f-52ac-42fa-b7f4-10c6eb70efce}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c537c790-f591-4fff-8927-e0cffda0fc96}">
+		<property name="assetPath">
+			<value>OfficeBackground.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>120.78358276643991</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{43f4669f-52ac-42fa-b7f4-10c6eb70efce}</destination>
+		</relationship>
+	</object>
+</objects>
