@@ -89129,6 +89129,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4738741197240207806, guid: e81c388fc508694449064abecd463758,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738741197240207806, guid: e81c388fc508694449064abecd463758,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198792317001295220, guid: e81c388fc508694449064abecd463758,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 850933490907723301, guid: e81c388fc508694449064abecd463758,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -89214,11 +89229,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 9198792317001295220, guid: e81c388fc508694449064abecd463758,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 2635695600006222092, guid: e81c388fc508694449064abecd463758,
         type: 3}
       propertyPath: m_FlipX
@@ -89278,16 +89288,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -11.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4738741197240207806, guid: e81c388fc508694449064abecd463758,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4738741197240207806, guid: e81c388fc508694449064abecd463758,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1884273332377844883, guid: e81c388fc508694449064abecd463758,
         type: 3}
@@ -89573,6 +89573,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4898153041120446521, guid: 051a0757934ff4f4aae542ea69b83778,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4898153041120446526, guid: 051a0757934ff4f4aae542ea69b83778,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -89676,11 +89681,6 @@ PrefabInstance:
     - target: {fileID: 4898153041120446526, guid: 051a0757934ff4f4aae542ea69b83778,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898153041120446521, guid: 051a0757934ff4f4aae542ea69b83778,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4898153041176979560, guid: 051a0757934ff4f4aae542ea69b83778,

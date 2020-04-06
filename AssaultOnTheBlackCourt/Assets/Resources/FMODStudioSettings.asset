@@ -18,7 +18,7 @@ MonoBehaviour:
   sourceBankPath: FMOD\FinalProjectFMOD\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
-  AutomaticSampleLoading: 0
+  AutomaticSampleLoading: 1
   ImportType: 0
   TargetAssetPath: 
   LoggingLevel: 2

@@ -32,7 +32,7 @@
 			<destination>{04f6e4df-22f8-486a-ac2d-1f097c39df3f}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{b928bac4-1c8d-4532-8af4-36c969ec624e}</destination>
+			<destination>{fe41cb5b-f139-43aa-ba34-6c1cd864525e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{e8398ed5-edd1-4ec9-8c92-87faf4ba854d}">
