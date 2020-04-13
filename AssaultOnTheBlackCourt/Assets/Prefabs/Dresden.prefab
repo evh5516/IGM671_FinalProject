@@ -255,9 +255,9 @@ GameObject:
   - component: {fileID: 6619304168999696112}
   - component: {fileID: 2435871883685349048}
   - component: {fileID: 3601073659255451408}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: HarryRunSheet_0
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,7 +312,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 0
   m_Sprite: {fileID: -6317142664258072679, guid: 7f44b66761aea5148968343ad0e76c85,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -355,9 +355,9 @@ GameObject:
   - component: {fileID: 5372649259258750137}
   - component: {fileID: 8240389788765325270}
   - component: {fileID: 5459299158386893189}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: HarryShootAnim_0
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -412,7 +412,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 0
   m_Sprite: {fileID: 3169266466028124409, guid: b810b5da126f5044798d8bd506b9ab61,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -996,7 +996,7 @@ GameObject:
   - component: {fileID: 8690464015264672145}
   m_Layer: 8
   m_Name: HarrySheet_0
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

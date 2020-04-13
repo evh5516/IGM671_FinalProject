@@ -16,8 +16,6 @@ public class UIManager : MonoBehaviour
     
     [SerializeField]
     private Canvas pauseCanvas;
-    [SerializeField]
-    private Canvas almanacCanvas;
     private bool paused;
     [SerializeField]
     private Slider healthSlider;
@@ -29,7 +27,7 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject blankPickupPrefab;
     
-    private List<(Pickup, GameObject)> activePickups = new List<(Pickup, GameObject)>();
+    private Queue<(Pickup, GameObject)> activePickups = new Queue<(Pickup, GameObject)>();
     
     private Vector3[] pickupPositions = {
         new Vector3(-100, 0, 0),
@@ -39,7 +37,7 @@ public class UIManager : MonoBehaviour
 
     private int nextPickupPos = 0; 
 
-    public List<(Pickup, GameObject)> ActivePickups
+    public Queue<(Pickup, GameObject)> ActivePickups
     {
         get { return activePickups; }
     }
@@ -68,26 +66,24 @@ public class UIManager : MonoBehaviour
                 enemies.Add(e); 
         }
 
-        if (SceneManager.GetActiveScene().name != "Main Menu" && SceneManager.GetActiveScene().name != "Credits" && SceneManager.GetActiveScene().name != "Instructions")
+        Queue<(Pickup, GameObject)> lastActivePickups = GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().ActivePickups;
+        List<GameObject> lastParticles = GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().DresdenParticles; 
+
+        for (int i = 0; i < lastActivePickups.Count; i++)
         {
-            List<(Pickup, GameObject)> lastActivePickups = GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().ActivePickups;
-            List<GameObject> lastParticles = GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().DresdenParticles;
-
-            for (int i = 0; i < lastActivePickups.Count; i++)
-            {
-                AddPickup(lastActivePickups[i].Item1);
-            }
-
-            for (int i = 0; i < lastParticles.Count; i++)
-            {
-                GameObject ps = Instantiate(lastParticles[i]);
-                ps.transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
-                ps.gameObject.transform.localPosition = new Vector3(-0.066f, -0.485f, -1.0f);
-            }
-
-            score = GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().Score;
-            scoreText.text = score.ToString();
+            AddPickup(lastActivePickups.Dequeue().Item1);
+            i--;
         }
+
+        for (int i = 0; i < lastParticles.Count; i++)
+        {
+            GameObject ps = Instantiate(lastParticles[i]);
+            ps.transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
+            ps.gameObject.transform.localPosition = new Vector3(-0.066f, -0.485f, -1.0f);
+        }
+
+        score = GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().Score;
+        scoreText.text = score.ToString();
     }
 
     private void Update()
@@ -133,7 +129,6 @@ public class UIManager : MonoBehaviour
     public void LoadNewScene(string sceneName)
     {
         if (sceneName == "Level1") GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().Score = 0;
-        else if (sceneName == "Main Menu") GameObject.Find("DataManager(Clone)").GetComponent<AudioSource>().Stop(); 
         SceneManager.LoadSceneAsync(sceneName);
     }
 
@@ -149,7 +144,6 @@ public class UIManager : MonoBehaviour
             e.GetComponent<Enemy>().Paused = true;
 
         pauseCanvas.enabled = true;
-        almanacCanvas.enabled = false;
 
         paused = true;
     }
@@ -165,12 +159,6 @@ public class UIManager : MonoBehaviour
         paused = false; 
     }
 
-    public void AlmanacVisible()
-    {
-        pauseCanvas.enabled = false;
-        almanacCanvas.enabled = true;
-    }
-
     public void QuitGame()
     {
         Application.Quit(); 
@@ -181,8 +169,7 @@ public class UIManager : MonoBehaviour
         if (nextPickupPos == 3)
         {
             nextPickupPos = 0;
-            (Pickup, GameObject) removedPickup = activePickups[0];
-            activePickups.RemoveAt(0);
+            (Pickup, GameObject) removedPickup = activePickups.Dequeue();
             removedPickup.Item1.ReverseEffect();
             //player.GetComponent<Dresden>().activePickups.Dequeue(); 
             Destroy(removedPickup.Item1.gameObject);
@@ -195,7 +182,6 @@ public class UIManager : MonoBehaviour
 
         GameObject newPickupUI = Instantiate(blankPickupPrefab, pickupPositions[nextPickupPos], Quaternion.Euler(0, 0, 0));
         newPickupUI.GetComponent<Image>().sprite = newPickup.gameObject.GetComponent<SpriteRenderer>().sprite;
-        newPickupUI.GetComponent<PickupUI>().linkedPickup = newPickup; 
 
         newPickupUI.gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 1);
         newPickupUI.gameObject.transform.SetParent(GameObject.Find("ActiveItems").transform);
@@ -203,7 +189,7 @@ public class UIManager : MonoBehaviour
 
         newPickup.pickedUp = true;
 
-        activePickups.Add((newPickup, newPickupUI));
+        activePickups.Enqueue((newPickup, newPickupUI));
 
         nextPickupPos++; 
     }

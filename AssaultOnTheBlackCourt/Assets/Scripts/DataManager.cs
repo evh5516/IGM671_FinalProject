@@ -11,7 +11,7 @@ public class DataManager : MonoBehaviour
     [SerializeField]
     private AudioSource soundClip;
     private int score;
-    private List<(Pickup, GameObject)> activePickups = new List<(Pickup, GameObject)>();
+    private Queue<(Pickup, GameObject)> activePickups = new Queue<(Pickup, GameObject)>();
     private List<GameObject> dresdenParticles = new List<GameObject>();
     #endregion
 
@@ -21,7 +21,7 @@ public class DataManager : MonoBehaviour
         get { return dresdenHealth; }
         set { dresdenHealth = value; }
     }
-    public List<(Pickup, GameObject)> ActivePickups
+    public Queue<(Pickup, GameObject)> ActivePickups
     {
         get { return activePickups; }
         set { activePickups = value; }

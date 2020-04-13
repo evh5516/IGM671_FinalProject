@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1434121211622571113}
   - component: {fileID: 840603059261517246}
   - component: {fileID: 2625028084870137863}
-  - component: {fileID: -2741778160850739710}
   m_Layer: 5
   m_Name: BlankPickupPrefab
   m_TagString: Untagged
@@ -118,30 +117,6 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 840603059261517246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -2741778160850739710}
-        m_MethodName: RemovePickup
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &-2741778160850739710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2202582850577053092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a299fd74bd9bc4195447219d7029b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  linkedPickup: {fileID: 0}
