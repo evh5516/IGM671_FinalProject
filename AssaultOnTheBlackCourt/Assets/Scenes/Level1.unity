@@ -82109,8 +82109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/MenuDing
-  PlayEvent: 16
+  Event: event:/Misc/MenuDing
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -85259,6 +85259,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1106403052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8653668019496962001, guid: 0a97e312e2a1d534baccd467f5b96ea6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1534091831}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1106403053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106403052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  Event: event:/Passive/Powerup
+  PlayEvent: 5
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1108683927 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 850933490907723304, guid: e81c388fc508694449064abecd463758,
@@ -88101,6 +88130,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 17.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653668019496962006, guid: 0a97e312e2a1d534baccd467f5b96ea6,
+        type: 3}
+      propertyPath: m_UsedByComposite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8653668019496962005, guid: 0a97e312e2a1d534baccd467f5b96ea6, type: 3}

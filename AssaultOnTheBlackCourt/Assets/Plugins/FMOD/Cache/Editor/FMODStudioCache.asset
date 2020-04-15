@@ -121,7 +121,7 @@ MonoBehaviour:
   Path: event:/Passive/Powerup
   guid: c8e53b3670362249938f0be73a873323
   Banks:
-  - {fileID: -6962525599438507507}
+  - {fileID: 2797125132802483356}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -129,6 +129,42 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3250
+--- !u!114 &-8155879634314687973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Enemies.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FinalProjectFMOD/Build/Desktop/Enemies.bank
+  SubDir: 
+  lastModified: 637225502051538460
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-7620072564793743531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FinalProjectFMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637225502051888776
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-7067380978557225073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +200,7 @@ MonoBehaviour:
   lastModified: 637223088223643308
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6337395183909765545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,7 +234,7 @@ MonoBehaviour:
   Path: event:/Enemy/EnemyMelee
   guid: 351a22bfaaf1fc4bbb0c9211c15f50d7
   Banks:
-  - {fileID: -3356084880530391818}
+  - {fileID: -8155879634314687973}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -243,7 +279,7 @@ MonoBehaviour:
   Path: event:/Enemy/Hit
   guid: 636d74153c47d847a29327717a33206a
   Banks:
-  - {fileID: -6962525599438507507}
+  - {fileID: 2797125132802483356}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -268,7 +304,7 @@ MonoBehaviour:
   lastModified: 637223088222722470
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4187358765419904072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,7 +384,7 @@ MonoBehaviour:
   lastModified: 637223088222292080
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3177250904946146435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,7 +402,7 @@ MonoBehaviour:
   lastModified: 637223088223242948
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2025852238042695859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,7 +418,7 @@ MonoBehaviour:
   Path: event:/Enemy/DogWhimper
   guid: fd824c6f4e909d46a362a614b0f6de78
   Banks:
-  - {fileID: -3356084880530391818}
+  - {fileID: -8155879634314687973}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -423,7 +459,7 @@ MonoBehaviour:
   Path: event:/Player/Footsteps
   guid: 04f772506f54624a99a764bf93a7b176
   Banks:
-  - {fileID: -6962525599438507507}
+  - {fileID: 2797125132802483356}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -445,11 +481,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 6494373845420308702}
-  - {fileID: -3356084880530391818}
-  - {fileID: 5705961800508244335}
-  - {fileID: -4724986384810262164}
-  - {fileID: -3177250904946146435}
-  - {fileID: -6962525599438507507}
+  - {fileID: -8155879634314687973}
+  - {fileID: -7620072564793743531}
+  - {fileID: 257409863852227141}
+  - {fileID: 6182452012201648906}
+  - {fileID: 2797125132802483356}
   EditorEvents:
   - {fileID: -5770683329288780434}
   - {fileID: 6204723884215049129}
@@ -460,13 +496,32 @@ MonoBehaviour:
   - {fileID: -201354544039829660}
   - {fileID: -5050555617117768033}
   - {fileID: -8273286369350460258}
+  - {fileID: 5337737884723644576}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5705961800508244335}
+  - {fileID: -7620072564793743531}
   StringsBanks:
   - {fileID: 6494373845420308702}
-  stringsBankWriteTime: 637223088222472242
+  stringsBankWriteTime: 637225502051938824
   cacheVersion: 3
+--- !u!114 &257409863852227141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Menu.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FinalProjectFMOD/Build/Desktop/Menu.bank
+  SubDir: 
+  lastModified: 637225502052449287
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &1228552853323916753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,6 +544,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 273
+--- !u!114 &1520341324152663535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HealingComplete/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 100
+  Default: 0
+  Exists: 1
 --- !u!114 &1584857615853427512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,7 +616,7 @@ MonoBehaviour:
   Path: event:/Misc/OfficeBackground
   guid: daf6c8194ae06048b7b889dad7573b4d
   Banks:
-  - {fileID: -3177250904946146435}
+  - {fileID: 6182452012201648906}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -552,6 +624,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 120783
+--- !u!114 &2797125132802483356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FinalProjectFMOD/Build/Desktop/Player.bank
+  SubDir: 
+  lastModified: 637225502054741380
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3080831149281710014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,7 +679,7 @@ MonoBehaviour:
   Path: event:/Enemy/DogBite
   guid: d7b405cc2a5faf4c9c55b3d863d24104
   Banks:
-  - {fileID: -3356084880530391818}
+  - {fileID: -8155879634314687973}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -637,6 +727,30 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &5337737884723644576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passive/HealingComplete
+  m_EditorClassIdentifier: 
+  Path: event:/Passive/HealingComplete
+  guid: 03c15ec42edad64fa4d188b5021861f7
+  Banks:
+  - {fileID: 2797125132802483356}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1520341324152663535}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &5705961800508244335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,6 +766,24 @@ MonoBehaviour:
   Path: FMOD/FinalProjectFMOD/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637223088222392275
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6182452012201648906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FinalProjectFMOD/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637225502053480227
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -670,7 +802,7 @@ MonoBehaviour:
   Path: event:/Enemy/Growl
   guid: 49b219196c33bf49b933c56325cbc15e
   Banks:
-  - {fileID: -3356084880530391818}
+  - {fileID: -8155879634314687973}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -692,11 +824,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/FinalProjectFMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637223088222472242
+  lastModified: 637225502051938824
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1346
+    Value: 1404
   Exists: 1
 --- !u!114 &7216635046475711515
 MonoBehaviour:
@@ -757,7 +889,7 @@ MonoBehaviour:
   Path: event:/Misc/MenuDing
   guid: 2f2e6413e715d84ea4c5c3a2e23ae2bf
   Banks:
-  - {fileID: -4724986384810262164}
+  - {fileID: 257409863852227141}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
