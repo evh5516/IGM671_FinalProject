@@ -23,7 +23,10 @@ public class SpellCast : MonoBehaviour
 
     [SerializeField]
     private bool enemy;
-    private bool active; 
+    private bool active;
+
+    public FMOD.Studio.EventInstance SpellCharge;
+    public bool charging;
 
     public float HoldStrength
     {
@@ -44,7 +47,8 @@ public class SpellCast : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dresden = GameObject.Find("Dresden"); 
+        dresden = GameObject.Find("Dresden");
+        SpellCharge = FMODUnity.RuntimeManager.CreateInstance("event:/Player/FireballCharge");
     }
 
     // Update is called once per frame
@@ -57,12 +61,23 @@ public class SpellCast : MonoBehaviour
                 if (Input.GetMouseButton(0))
                 {
                     holdStrength += Time.deltaTime;
+                    if (!charging)
+                    {
+                        charging = true;
+                        SpellCharge.start();
+                    }
                 }
 
                 if (Input.GetMouseButtonUp(0))
                 {
                     GameObject spell = Instantiate(spellPrefabs[0], dresden.transform.position + dresden.GetComponent<Dresden>().velocity.normalized, dresden.transform.rotation);
                     //Camera.main.GetComponent<CollisionManager>().projectiles.Add(spell);
+
+                    if (charging)
+                    {
+                        charging = false;
+                        SpellCharge.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    }
 
                     Vector3 velocity = (new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0) - dresden.transform.position).normalized;
                     velocity *= spell.GetComponent<Projectile>().Speed;

@@ -52,6 +52,8 @@ public class UIManager : MonoBehaviour
         set { game = value; }
     }
 
+    public FMOD.Studio.EventInstance MenuInteraction;
+
     // Use this for initialization
     void Start()
     {
@@ -84,6 +86,8 @@ public class UIManager : MonoBehaviour
 
         score = GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().Score;
         scoreText.text = score.ToString();
+
+        MenuInteraction = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/MenuDing");
     }
 
     private void Update()
@@ -129,6 +133,7 @@ public class UIManager : MonoBehaviour
     public void LoadNewScene(string sceneName)
     {
         if (sceneName == "Level1") GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().Score = 0;
+        if (sceneName == "Instructions" || sceneName == "Main Menu" || sceneName == "Credits" || sceneName == "Tutorial") MenuInteraction.start();
         SceneManager.LoadSceneAsync(sceneName);
     }
 
@@ -150,17 +155,19 @@ public class UIManager : MonoBehaviour
 
     public void ResumeGame()
     {
+        MenuInteraction.start();
         player.GetComponent<Dresden>().Paused = false;
         foreach (GameObject e in enemies)
             e.GetComponent<Enemy>().Paused = false;
 
         pauseCanvas.enabled = false;
 
-        paused = false; 
+        paused = false;
     }
 
     public void QuitGame()
     {
+        MenuInteraction.start();
         Application.Quit(); 
     }
 

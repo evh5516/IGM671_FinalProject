@@ -14801,6 +14801,7 @@ GameObject:
   - component: {fileID: 986382317}
   - component: {fileID: 986382316}
   - component: {fileID: 986382319}
+  - component: {fileID: 986382320}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14894,6 +14895,19 @@ MonoBehaviour:
   scoreText: {fileID: 2147175592}
   blankPickupPrefab: {fileID: 2202582850577053092, guid: 19c61bf896533dc4da51abc127d83344,
     type: 3}
+--- !u!114 &986382320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986382315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
 --- !u!1 &1045279739
 GameObject:
   m_ObjectHideFlags: 0

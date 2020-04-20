@@ -6,16 +6,22 @@ using UnityEngine.SceneManagement;
 public class Dresden : Vehicle
 {
     public int MAX_HEALTH;
+
+    public FMOD.Studio.EventInstance Footsteps;
+    public bool triggered;
     //public Queue<Pickup> activePickups = new Queue<Pickup>(); 
     [SerializeField]
     private float colorTicker;
     public GameObject runSprite;
     public GameObject idleSprite;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         base.Start();
+        Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
     }
 
     // Update is called once per frame
@@ -51,11 +57,22 @@ public class Dresden : Vehicle
         {
             runSprite.SetActive(true);
             idleSprite.SetActive(false);
+            if (!triggered)
+            {
+                triggered = true;
+                Footsteps.start();
+            }
         }
         else
         {
             runSprite.SetActive(false);
             idleSprite.SetActive(true);
+            
+            if (triggered)
+            {
+                triggered = false;
+                Footsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
         }
 
     }

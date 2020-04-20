@@ -18,6 +18,8 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     private int damage;
     #endregion
+    public FMOD.Studio.EventInstance FireballRelease;
+    public FMOD.Studio.EventInstance HitEnemy;
 
     #region Properties
     public int Damage
@@ -43,7 +45,12 @@ public class Projectile : MonoBehaviour
         timer = 0;
 
         Physics2D.IgnoreLayerCollision(9, 10);
-        Physics2D.IgnoreLayerCollision(0, 9); 
+        Physics2D.IgnoreLayerCollision(0, 9);
+
+        FireballRelease = FMODUnity.RuntimeManager.CreateInstance("event:/Player/FireballRelease");
+        FireballRelease.start();
+
+        HitEnemy = FMODUnity.RuntimeManager.CreateInstance("event:/Enemy/HitEnemy");
     }
 
     // Update is called once per frame
@@ -83,6 +90,7 @@ public class Projectile : MonoBehaviour
         else if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<Vehicle>().Health -= damage;
+            HitEnemy.start();
             try
             {
                 collision.gameObject.GetComponent<SpriteRenderer>().color = Color.red;

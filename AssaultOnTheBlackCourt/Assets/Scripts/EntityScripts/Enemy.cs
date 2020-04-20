@@ -31,11 +31,12 @@ public class Enemy : Vehicle
     private bool reversed;
 
     [SerializeField]
-    private bool isBoss; 
-#endregion
+    private bool isBoss;
+    #endregion
+    public FMOD.Studio.EventInstance EnemyAttack;
 
-// Start is called before the first frame update
-void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         if (moving)
         {
@@ -56,7 +57,9 @@ void Start()
 
         dresden = GameObject.FindWithTag("Player");
 
-        triggeredObstacles = new List<int>(); 
+        triggeredObstacles = new List<int>();
+
+        EnemyAttack = FMODUnity.RuntimeManager.CreateInstance("event:/Enemy/EnemyMelee");
     }
 
     // Update is called once per frame
@@ -104,7 +107,7 @@ void Start()
                 }
                 else if (attackTime >= 1.0f)
                 {
-
+                    EnemyAttack.start();
                     dresden.GetComponent<Dresden>().Health -= meleeDamage;
                     attackTime = 0.0f;
                     //Debug.Log("Damage Dealt");
