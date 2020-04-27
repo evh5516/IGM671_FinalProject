@@ -55,7 +55,7 @@ public class UIManager : MonoBehaviour
     public FMOD.Studio.EventInstance MenuInteraction;
     public FMOD.Studio.EventInstance BackgroundAmbiance;
     public FMOD.Studio.EventInstance BackgroundMusic;
-    public FMOD.Studio.EventInstance Footsteps;
+    //public FMOD.Studio.EventInstance Footsteps;
 
     public FMOD.Studio.Bus PlayerBus;
     public FMOD.Studio.Bus EnemyBus;
@@ -99,13 +99,15 @@ public class UIManager : MonoBehaviour
         //MenuInteraction = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/MenuDing");
         BackgroundAmbiance = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/OfficeBackground");
         //BackgroundMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/Music");
-        Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
+        //Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
 
         PlayerBus = FMODUnity.RuntimeManager.GetBus("bus:/Player");
         EnemyBus = FMODUnity.RuntimeManager.GetBus("bus:/Enemy");
         PassiveBus = FMODUnity.RuntimeManager.GetBus("bus:/Passive");
         MenuBus = FMODUnity.RuntimeManager.GetBus("BUS:/Menu");
         MusicBus = FMODUnity.RuntimeManager.GetBus("BUS:/Music");
+
+        BackgroundAmbiance.start();
     }
 
     private void Update()
@@ -154,7 +156,7 @@ public class UIManager : MonoBehaviour
 
     public void LoadNewScene(string sceneName)
     {
-        BackgroundAmbiance.start();
+        
         if (sceneName == "Level1") GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().Score = 0;
 
         //Menu Button Sound
@@ -178,7 +180,7 @@ public class UIManager : MonoBehaviour
     public void LoadNextLevel()
     {
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-        Footsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //Footsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
     public void PauseGame()

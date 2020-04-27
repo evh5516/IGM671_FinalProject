@@ -15,6 +15,8 @@ public class Dresden : Vehicle
     public GameObject runSprite;
     public GameObject idleSprite;
 
+    public bool isQuitting;
+
 
 
     // Start is called before the first frame update
@@ -74,7 +76,6 @@ public class Dresden : Vehicle
                 Footsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }
         }
-
     }
 
     public override void CalcSteeringForces()
@@ -139,5 +140,15 @@ public class Dresden : Vehicle
         else if (dot > 0) flip = false;
 
         gameObject.GetComponentInChildren<SpriteRenderer>().flipX = flip; 
+    }
+
+    private void OnDestroy()
+    {
+        if (Footsteps.isValid())
+        {
+            Footsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            Footsteps.release();
+        }
+        UnityEngine.Debug.Log("Destroyed");
     }
 }

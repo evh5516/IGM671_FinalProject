@@ -5,7 +5,7 @@
 			<value>OfficeBackground</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{57ec8ff7-1172-406e-be40-2c1b5cfa8f74}</destination>
@@ -86,6 +86,12 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{92e46efe-9c43-46ee-b444-ad4a076dc34e}">
+		<property name="overridingInputFormat">
+			<value>1</value>
+		</property>
+		<property name="inputFormatOverridden">
+			<value>true</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{633a13ea-9763-4af8-99b9-f949502de20c}</destination>
 		</relationship>
@@ -121,7 +127,7 @@
 			<value>0</value>
 		</property>
 		<property name="maximumScatterDistance">
-			<value>3.79999995</value>
+			<value>0</value>
 		</property>
 		<relationship name="sound">
 			<destination>{b558be0f-39eb-42de-9a15-3ac090d9c783}</destination>
@@ -130,6 +136,12 @@
 	<object class="EventMixerGroup" id="{274c1fcc-ceec-47b9-8231-21055ac8588a}">
 		<property name="volume">
 			<value>-3.5</value>
+		</property>
+		<property name="overridingInputFormat">
+			<value>1</value>
+		</property>
+		<property name="inputFormatOverridden">
+			<value>true</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -166,7 +178,14 @@
 			<destination>{6dfdc81d-d515-485c-b15b-4bb4b62bc1ed}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{d1c7b2ca-63b6-4ef1-bc05-17fed9a6d216}" />
+	<object class="MixerBusPanner" id="{d1c7b2ca-63b6-4ef1-bc05-17fed9a6d216}">
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+		<property name="outputFormatOverridden">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{b59e2385-5224-49c1-850a-9f3f34a77a63}" />
 	<object class="MultiSound" id="{b558be0f-39eb-42de-9a15-3ac090d9c783}">
 		<relationship name="sounds">
@@ -192,6 +211,9 @@
 	<object class="MixerBusPanner" id="{9b2454bc-9d4c-4c8a-bf5a-39e7626999d0}">
 		<property name="surroundPanDirection">
 			<value>26.565052</value>
+		</property>
+		<property name="disabledSpeakers">
+			<value>8</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{6dfdc81d-d515-485c-b15b-4bb4b62bc1ed}" />
