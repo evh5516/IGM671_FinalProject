@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
-	<object class="AudioFile" id="{e443ee38-ced3-49ec-9193-52971ce60d27}">
+	<object class="AudioFile" id="{9b4b1baa-e913-44d7-bf2c-026e8c1ed8db}">
 		<property name="assetPath">
-			<value>Growl.wav</value>
+			<value>EnemyMelee.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.27324263038548752</value>
+			<value>0.11464852607709751</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{43f4669f-52ac-42fa-b7f4-10c6eb70efce}</destination>

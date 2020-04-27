@@ -56,7 +56,7 @@
 			<destination>{3ef245cf-1850-489d-bd90-0c4f90e9e443}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{7cccbd0c-1447-4ed1-a6ed-a4fa016dbe11}</destination>
+			<destination>{0dad4f44-83b3-42ce-8186-aabcb8db4e55}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{49bd7fc0-c79e-46ca-9e8a-c9b1c2fef923}" />
@@ -66,7 +66,8 @@
 			<destination>{636dc725-5fca-498d-a852-3168528e6329}</destination>
 		</relationship>
 		<relationship name="modules">
-			<destination>{3ed071bb-afb7-4a54-bb68-c72882289056}</destination>
+			<destination>{5fb576a6-9dd9-4e18-a981-31247444a0be}</destination>
+			<destination>{47e78caf-2d1a-40bd-9d21-2e32058732f7}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{7e829f5d-ae48-40ba-b3c5-4538317c8bf2}</destination>
@@ -74,10 +75,11 @@
 	</object>
 	<object class="Timeline" id="{d1b69bc3-9302-455b-a565-7d93e49ed371}">
 		<relationship name="modules">
-			<destination>{3ed071bb-afb7-4a54-bb68-c72882289056}</destination>
+			<destination>{5fb576a6-9dd9-4e18-a981-31247444a0be}</destination>
+			<destination>{47e78caf-2d1a-40bd-9d21-2e32058732f7}</destination>
 		</relationship>
 		<relationship name="markers">
-			<destination>{f33291ac-4298-490d-aa37-db85010b8f33}</destination>
+			<destination>{2d823cbd-5c8b-4480-9474-96c06e1e77e4}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{72a6ae19-76dc-4bba-8f78-fb9b858f566c}">
@@ -107,20 +109,28 @@
 			<destination>{fba26895-9db5-4a72-b05a-00dd40766441}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{3ed071bb-afb7-4a54-bb68-c72882289056}">
+	<object class="SingleSound" id="{5fb576a6-9dd9-4e18-a981-31247444a0be}">
 		<property name="length">
-			<value>0.71414965986394563</value>
+			<value>0.17165532879818593</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{fc2d1e6d-5cf6-4e40-b792-2d1d01a50403}</destination>
-		</relationship>
 		<relationship name="audioFile">
-			<destination>{604caef3-8f3f-4e8e-abf5-1fb9aaa21d81}</destination>
+			<destination>{d13ff65e-4fef-4a09-968b-7ad1916ff276}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{47e78caf-2d1a-40bd-9d21-2e32058732f7}">
+		<property name="start">
+			<value>0.17165532879818593</value>
+		</property>
+		<property name="length">
+			<value>0.25904761904761903</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{82a2d4ab-40a0-42c3-b2f2-95eeb3f53703}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{7e829f5d-ae48-40ba-b3c5-4538317c8bf2}">
 		<property name="volume">
-			<value>10</value>
+			<value>-8</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -138,12 +148,12 @@
 			<destination>{f37a2c29-4743-4fe2-a0a0-d343a664b799}</destination>
 		</relationship>
 	</object>
-	<object class="LoopRegion" id="{f33291ac-4298-490d-aa37-db85010b8f33}">
+	<object class="LoopRegion" id="{2d823cbd-5c8b-4480-9474-96c06e1e77e4}">
 		<property name="position">
-			<value>0</value>
+			<value>0.17165532879818593</value>
 		</property>
 		<property name="length">
-			<value>0.71414965986394563</value>
+			<value>0.25904761904761908</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{d1b69bc3-9302-455b-a565-7d93e49ed371}</destination>
@@ -159,17 +169,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{aa17a034-5950-4ba4-b244-0cc0157bf7a8}" />
 	<object class="MixerBusFader" id="{3c2888ef-dd9a-41f0-b89d-3a7829aba679}" />
-	<object class="ADSRModulator" id="{fc2d1e6d-5cf6-4e40-b792-2d1d01a50403}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>volume</value>
-		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
-		</property>
-	</object>
 	<object class="Automator" id="{fba26895-9db5-4a72-b05a-00dd40766441}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>volume</value>

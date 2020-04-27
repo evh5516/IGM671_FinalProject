@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
-	<object class="AudioFile" id="{604caef3-8f3f-4e8e-abf5-1fb9aaa21d81}">
+	<object class="AudioFile" id="{d13ff65e-4fef-4a09-968b-7ad1916ff276}">
 		<property name="assetPath">
 			<value>FireballCharge.wav</value>
 		</property>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.71414965986394563</value>
+			<value>0.17165532879818593</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{43f4669f-52ac-42fa-b7f4-10c6eb70efce}</destination>

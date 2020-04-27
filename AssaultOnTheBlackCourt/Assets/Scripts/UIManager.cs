@@ -53,6 +53,15 @@ public class UIManager : MonoBehaviour
     }
 
     public FMOD.Studio.EventInstance MenuInteraction;
+    public FMOD.Studio.EventInstance BackgroundAmbiance;
+    public FMOD.Studio.EventInstance BackgroundMusic;
+    public FMOD.Studio.EventInstance Footsteps;
+
+    public FMOD.Studio.Bus PlayerBus;
+    public FMOD.Studio.Bus EnemyBus;
+    public FMOD.Studio.Bus PassiveBus;
+    public FMOD.Studio.Bus MenuBus;
+    public FMOD.Studio.Bus MusicBus;
 
     // Use this for initialization
     void Start()
@@ -87,7 +96,16 @@ public class UIManager : MonoBehaviour
         score = GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().Score;
         scoreText.text = score.ToString();
 
-        MenuInteraction = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/MenuDing");
+        //MenuInteraction = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/MenuDing");
+        BackgroundAmbiance = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/OfficeBackground");
+        //BackgroundMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/Music");
+        Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
+
+        PlayerBus = FMODUnity.RuntimeManager.GetBus("bus:/Player");
+        EnemyBus = FMODUnity.RuntimeManager.GetBus("bus:/Enemy");
+        PassiveBus = FMODUnity.RuntimeManager.GetBus("bus:/Passive");
+        MenuBus = FMODUnity.RuntimeManager.GetBus("BUS:/Menu");
+        MusicBus = FMODUnity.RuntimeManager.GetBus("BUS:/Music");
     }
 
     private void Update()
@@ -97,9 +115,13 @@ public class UIManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
             {
                 if (!paused)
+                {
                     PauseGame();
+                }
                 else
+                {
                     ResumeGame();
+                }
             }
 
             healthSlider.value = player.GetComponent<Dresden>().Health / player.GetComponent<Dresden>().MAX_HEALTH;
@@ -132,14 +154,31 @@ public class UIManager : MonoBehaviour
 
     public void LoadNewScene(string sceneName)
     {
+        BackgroundAmbiance.start();
         if (sceneName == "Level1") GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().Score = 0;
-        if (sceneName == "Instructions" || sceneName == "Main Menu" || sceneName == "Credits" || sceneName == "Tutorial") MenuInteraction.start();
+
+        //Menu Button Sound
+        //if (sceneName == "Instructions" || sceneName == "Main Menu" || sceneName == "Credits" || sceneName == "Tutorial") MenuInteraction.start();
+        // Adjusting parameter of music and background depending on level
+        if (sceneName == "Tutorial" || sceneName == "Level2" || sceneName == "Level4" || sceneName == "Level6" || sceneName == "Level6" || sceneName == "Level8" || sceneName == "Level10")
+        {
+            BackgroundAmbiance.setParameterByName("BackgroundParam", 0);
+        }
+        else if (sceneName == "Level1" || sceneName == "Level3" || sceneName == "Level5" || sceneName == "Level7" || sceneName == "Level9" || sceneName == "Level11")
+        {
+            BackgroundAmbiance.setParameterByName("BackgroundParam", 1);
+        }
+        else
+        {
+            BackgroundAmbiance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
         SceneManager.LoadSceneAsync(sceneName);
     }
 
     public void LoadNextLevel()
     {
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1); 
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        Footsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
     public void PauseGame()
@@ -147,6 +186,10 @@ public class UIManager : MonoBehaviour
         player.GetComponent<Dresden>().Paused = true;
         foreach (GameObject e in enemies)
             e.GetComponent<Enemy>().Paused = true;
+
+        PlayerBus.setMute(true);
+        EnemyBus.setMute(true);
+        PassiveBus.setMute(true);
 
         pauseCanvas.enabled = true;
 
@@ -159,6 +202,10 @@ public class UIManager : MonoBehaviour
         player.GetComponent<Dresden>().Paused = false;
         foreach (GameObject e in enemies)
             e.GetComponent<Enemy>().Paused = false;
+
+        PlayerBus.setMute(false);
+        EnemyBus.setMute(false);
+        PassiveBus.setMute(false);
 
         pauseCanvas.enabled = false;
 

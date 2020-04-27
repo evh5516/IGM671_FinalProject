@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
-	<object class="AudioFile" id="{b67a81dc-a65c-409f-aa00-3cd3e5d62bd4}">
+	<object class="AudioFile" id="{87b64487-3187-4348-adef-6799085a37f7}">
 		<property name="assetPath">
-			<value>DogWhimper.wav</value>
+			<value>Footsteps.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.60755102040816322</value>
+			<value>0.68689342403628117</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{43f4669f-52ac-42fa-b7f4-10c6eb70efce}</destination>

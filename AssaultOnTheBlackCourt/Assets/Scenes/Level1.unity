@@ -81086,6 +81086,7 @@ GameObject:
   - component: {fileID: 525017399}
   - component: {fileID: 525017398}
   - component: {fileID: 525017397}
+  - component: {fileID: 525017400}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -81206,6 +81207,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525017395}
   m_CullTransparentMesh: 0
+--- !u!114 &525017400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525017395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6bc63584e8d9e747938cf89f15c2b9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuButton: {fileID: 525017397}
 --- !u!1001 &535957807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82105,20 +82119,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 622222328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: c6bc63584e8d9e747938cf89f15c2b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Misc/MenuDing
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  menuButton: {fileID: 622222330}
 --- !u!1001 &631392537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85364,6 +85368,7 @@ GameObject:
   - component: {fileID: 1118799566}
   - component: {fileID: 1118799565}
   - component: {fileID: 1118799564}
+  - component: {fileID: 1118799567}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -85484,6 +85489,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118799562}
   m_CullTransparentMesh: 0
+--- !u!114 &1118799567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118799562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6bc63584e8d9e747938cf89f15c2b9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuButton: {fileID: 1118799564}
 --- !u!1001 &1122021655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85908,20 +85926,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1206215571}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: c6bc63584e8d9e747938cf89f15c2b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Misc/MenuDing
-  PlayEvent: 7
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  menuButton: {fileID: 1206215573}
 --- !u!1 &1220344231
 GameObject:
   m_ObjectHideFlags: 0
@@ -86518,6 +86526,7 @@ GameObject:
   - component: {fileID: 1303316921}
   - component: {fileID: 1303316920}
   - component: {fileID: 1303316919}
+  - component: {fileID: 1303316922}
   m_Layer: 5
   m_Name: Return To Menu
   m_TagString: Untagged
@@ -86638,6 +86647,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303316917}
   m_CullTransparentMesh: 0
+--- !u!114 &1303316922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303316917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6bc63584e8d9e747938cf89f15c2b9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuButton: {fileID: 1303316919}
 --- !u!1001 &1309141323
 PrefabInstance:
   m_ObjectHideFlags: 0
