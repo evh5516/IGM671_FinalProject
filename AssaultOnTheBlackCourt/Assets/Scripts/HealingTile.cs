@@ -59,4 +59,13 @@ public class HealingTile : MonoBehaviour
             
         }
     }
+    private void OnDestroy()
+    {
+        if (HealInProgress.isValid())
+        {
+            HealInProgress.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            HealInProgress.release();
+        }
+        UnityEngine.Debug.Log("Destroyed");
+    }
 }

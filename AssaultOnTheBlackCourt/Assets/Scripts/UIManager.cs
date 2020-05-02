@@ -63,6 +63,8 @@ public class UIManager : MonoBehaviour
     public FMOD.Studio.Bus MenuBus;
     public FMOD.Studio.Bus MusicBus;
 
+    public FMOD.Studio.EventInstance PauseSnap;
+
     // Use this for initialization
     void Start()
     {
@@ -106,6 +108,8 @@ public class UIManager : MonoBehaviour
         PassiveBus = FMODUnity.RuntimeManager.GetBus("bus:/Passive");
         MenuBus = FMODUnity.RuntimeManager.GetBus("BUS:/Menu");
         MusicBus = FMODUnity.RuntimeManager.GetBus("BUS:/Music");
+
+        PauseSnap = FMODUnity.RuntimeManager.CreateInstance("snapshot:/PauseSnapshot");
 
         BackgroundAmbiance.start();
     }
@@ -189,9 +193,11 @@ public class UIManager : MonoBehaviour
         foreach (GameObject e in enemies)
             e.GetComponent<Enemy>().Paused = true;
 
-        PlayerBus.setMute(true);
-        EnemyBus.setMute(true);
-        PassiveBus.setMute(true);
+        //PlayerBus.setMute(true);
+        //EnemyBus.setMute(true);
+        //PassiveBus.setMute(true);
+
+        PauseSnap.start();
 
         pauseCanvas.enabled = true;
 
@@ -205,9 +211,11 @@ public class UIManager : MonoBehaviour
         foreach (GameObject e in enemies)
             e.GetComponent<Enemy>().Paused = false;
 
-        PlayerBus.setMute(false);
-        EnemyBus.setMute(false);
-        PassiveBus.setMute(false);
+        //PlayerBus.setMute(false);
+        //EnemyBus.setMute(false);
+        //PassiveBus.setMute(false);
+
+        PauseSnap.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
         pauseCanvas.enabled = false;
 

@@ -158,4 +158,13 @@ public class SpellCast : MonoBehaviour
             }
         }
     }
+    private void OnDestroy()
+    {
+        if (SpellCharge.isValid())
+        {
+            SpellCharge.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            SpellCharge.release();
+        }
+        UnityEngine.Debug.Log("Destroyed");
+    }
 }

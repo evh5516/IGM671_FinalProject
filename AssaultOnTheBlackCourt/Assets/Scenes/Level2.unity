@@ -437,7 +437,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 193219388}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -504,6 +504,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 193219387}
+  mouseOver: 0
+  triggered: 0
 --- !u!1 &207713680
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +857,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 328087781}
+  mouseOver: 0
+  triggered: 0
 --- !u!1001 &377374569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15082,6 +15086,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 1045279741}
+  mouseOver: 0
+  triggered: 0
 --- !u!1001 &1109786932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15363,6 +15369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 1115444562}
+  mouseOver: 0
+  triggered: 0
 --- !u!1 &1295542448
 GameObject:
   m_ObjectHideFlags: 0
@@ -15812,6 +15820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 1466857614}
+  mouseOver: 0
+  triggered: 0
 --- !u!1 &1656959153
 GameObject:
   m_ObjectHideFlags: 0

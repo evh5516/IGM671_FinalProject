@@ -103,4 +103,13 @@ public class Projectile : MonoBehaviour
             return;
         }
     }
+    private void OnDestroy()
+    {
+        if (FireballRelease.isValid())
+        {
+            FireballRelease.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            FireballRelease.release();
+        }
+        UnityEngine.Debug.Log("Destroyed");
+    }
 }

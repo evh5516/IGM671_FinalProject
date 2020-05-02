@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
 	<object class="MixerGroup" id="{460f2f92-0ad8-4e3b-bd3f-83ca7e4ef874}">
+		<property name="volume">
+			<value>-11</value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>
@@ -20,8 +23,10 @@
 	<object class="MixerBusEffectChain" id="{a23d818c-8ed2-4b06-8ee2-1c263525cb7f}">
 		<relationship name="effects">
 			<destination>{3aaea10c-672f-4136-b17f-b50dce150af1}</destination>
+			<destination>{02205db6-5d7a-440d-9f1d-b9ea5a01cb3d}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{30d938d9-9a1a-475e-99ce-346f868601f1}" />
 	<object class="MixerBusFader" id="{3aaea10c-672f-4136-b17f-b50dce150af1}" />
+	<object class="ThreeEQEffect" id="{02205db6-5d7a-440d-9f1d-b9ea5a01cb3d}" />
 </objects>
