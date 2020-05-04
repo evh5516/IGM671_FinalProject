@@ -120,6 +120,49 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &70342831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 70342833}
+  - component: {fileID: 70342832}
+  m_Layer: 0
+  m_Name: BackgroundMusic
+  m_TagString: Music
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &70342832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70342831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dfb225a5dda177458b1725a58ee84a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &70342833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70342831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.156526, y: 0.2065087, z: -13.753906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &187872894
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 522125621}
+  mouseOver: 0
+  triggered: 0
 --- !u!1 &832370502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1247,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 1371401601}
+  mouseOver: 0
+  triggered: 0
 --- !u!1 &1509015529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,6 +1474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 1642696025}
+  mouseOver: 0
+  triggered: 0
 --- !u!1 &1684887479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,6 +1622,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 1684887481}
+  mouseOver: 0
+  triggered: 0
 --- !u!1 &2056483376
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,9 @@ public class Dresden : Vehicle
     public int MAX_HEALTH;
 
     public FMOD.Studio.EventInstance Footsteps;
+    public FMOD.Studio.EventInstance LowHealthSnap;
+    public FMOD.Studio.PARAMETER_ID hpParam;
+
     public bool triggered;
     //public Queue<Pickup> activePickups = new Queue<Pickup>(); 
     [SerializeField]
@@ -24,6 +27,9 @@ public class Dresden : Vehicle
     {
         base.Start();
         Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
+        LowHealthSnap = FMODUnity.RuntimeManager.CreateInstance("snapshot:/LowHealth");
+
+        LowHealthSnap.start();
     }
 
     // Update is called once per frame
@@ -54,6 +60,8 @@ public class Dresden : Vehicle
             Camera.main.GetComponent<UIManager>().Game = false;
             return;
         }
+
+        LowHealthSnap.setParameterByName("HP", health);
 
         if(ultimateForce.magnitude != 0)
         {

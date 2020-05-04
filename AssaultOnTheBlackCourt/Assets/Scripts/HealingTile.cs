@@ -59,6 +59,12 @@ public class HealingTile : MonoBehaviour
             
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        HealInProgress.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        HealingBool = false;
+    }
+
     private void OnDestroy()
     {
         if (HealInProgress.isValid())

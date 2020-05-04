@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Pickup
   - EndWall
+  - Music
   layers:
   - Default
   - TransparentFX

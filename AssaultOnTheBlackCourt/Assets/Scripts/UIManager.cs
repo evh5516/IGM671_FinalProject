@@ -55,13 +55,8 @@ public class UIManager : MonoBehaviour
     public FMOD.Studio.EventInstance MenuInteraction;
     public FMOD.Studio.EventInstance BackgroundAmbiance;
     public FMOD.Studio.EventInstance BackgroundMusic;
-    //public FMOD.Studio.EventInstance Footsteps;
 
-    public FMOD.Studio.Bus PlayerBus;
-    public FMOD.Studio.Bus EnemyBus;
-    public FMOD.Studio.Bus PassiveBus;
-    public FMOD.Studio.Bus MenuBus;
-    public FMOD.Studio.Bus MusicBus;
+ 
 
     public FMOD.Studio.EventInstance PauseSnap;
 
@@ -98,16 +93,8 @@ public class UIManager : MonoBehaviour
         score = GameObject.Find("DataManager(Clone)").GetComponent<DataManager>().Score;
         scoreText.text = score.ToString();
 
-        //MenuInteraction = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/MenuDing");
         BackgroundAmbiance = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/OfficeBackground");
-        //BackgroundMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/Music");
-        //Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
-
-        PlayerBus = FMODUnity.RuntimeManager.GetBus("bus:/Player");
-        EnemyBus = FMODUnity.RuntimeManager.GetBus("bus:/Enemy");
-        PassiveBus = FMODUnity.RuntimeManager.GetBus("bus:/Passive");
-        MenuBus = FMODUnity.RuntimeManager.GetBus("BUS:/Menu");
-        MusicBus = FMODUnity.RuntimeManager.GetBus("BUS:/Music");
+        BackgroundMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Misc/Music");
 
         PauseSnap = FMODUnity.RuntimeManager.CreateInstance("snapshot:/PauseSnapshot");
 
@@ -169,11 +156,21 @@ public class UIManager : MonoBehaviour
         if (sceneName == "Tutorial" || sceneName == "Level2" || sceneName == "Level4" || sceneName == "Level6" || sceneName == "Level6" || sceneName == "Level8" || sceneName == "Level10")
         {
             BackgroundAmbiance.setParameterByName("BackgroundParam", 0);
+            BackgroundMusic.setParameterByName("MusicParam", 25);
         }
         else if (sceneName == "Level1" || sceneName == "Level3" || sceneName == "Level5" || sceneName == "Level7" || sceneName == "Level9" || sceneName == "Level11")
         {
             BackgroundAmbiance.setParameterByName("BackgroundParam", 1);
+            if (sceneName == "Level5" ||  sceneName == "Level11")
+            {
+                BackgroundMusic.setParameterByName("MusicParam", 100);
+            }
+            else
+            {
+                BackgroundMusic.setParameterByName("MusicParam", 50);
+            }
         }
+
         else
         {
             BackgroundAmbiance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
